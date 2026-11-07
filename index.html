@@ -164,5 +164,36 @@ document.querySelectorAll('a[href*="calendar.app.google"]').forEach(function(a){
   a.addEventListener('click', function(){ fbq('track', 'Schedule', {content_name: a.getAttribute('data-intent') || 'Call'}); });
 });
 </script>
+<!-- sbs-nav:start -->
+<style>
+#sbsNavBtn{position:fixed;top:14px;right:14px;z-index:99998;background:#0e2a47;color:#fff;border:1px solid #c9a86a;border-radius:999px;padding:10px 18px;font:600 14px/1.2 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;cursor:pointer;box-shadow:0 4px 18px rgba(10,25,45,.35);letter-spacing:.02em}
+#sbsNavBtn:hover{background:#14365e}
+#sbsNavPanel{position:fixed;top:62px;right:14px;z-index:99999;width:min(330px,calc(100vw - 28px));background:#ffffff;border-radius:16px;box-shadow:0 18px 50px rgba(10,25,45,.35);padding:12px;display:none;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+#sbsNavPanel.open{display:block}
+#sbsNavPanel .sbsNavHead{font:700 12px/1.3 system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8a6d3b;padding:6px 10px 8px}
+#sbsNavPanel a.sbsNavLink{display:block;padding:10px;border-radius:10px;color:#12263a;text-decoration:none}
+#sbsNavPanel a.sbsNavLink:hover{background:#f2f5f9}
+#sbsNavPanel a.sbsNavLink b{display:block;font:600 15px/1.3 system-ui,sans-serif}
+#sbsNavPanel a.sbsNavLink span{display:block;font:400 13px/1.35 system-ui,sans-serif;color:#5b6b7c;margin-top:1px}
+#sbsNavPanel .sbsNavFoot{border-top:1px solid #e6ebf0;margin-top:8px;padding:10px 10px 4px;font:500 13.5px/1.5 system-ui,sans-serif;color:#12263a}
+#sbsNavPanel .sbsNavFoot a{color:#0e2a47;font-weight:700;text-decoration:none}
+</style>
+<button id="sbsNavBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="sbsNavPanel">&#9776;&nbsp; Menu</button>
+<nav id="sbsNavPanel" aria-label="Explore SoldByMrSmith.com">
+  <div class="sbsNavHead">Explore SoldByMrSmith.com</div>
+  <a class="sbsNavLink" href="https://soldbymrsmith.com/"><b>Home</b><span>Find a home. Start here.</span></a>
+  <a class="sbsNavLink" href="https://soldbymrsmith.com/sell"><b>Sell Your Home &mdash; 4 Options</b><span>The options most sellers never hear about</span></a>
+  <a class="sbsNavLink" href="https://soldbymrsmith.com/valuation"><b>What&rsquo;s Your Home Worth?</b><span>Free valuation &amp; seller net breakdown</span></a>
+  <a class="sbsNavLink" href="https://soldbymrsmith.com/first-time-buyer-faq"><b>First-Time Buyer FAQ</b><span>Down payment assistance, explained honestly</span></a>
+  <a class="sbsNavLink" href="https://soldbymrsmith.com/firsthome"><b>Buy With Little Money Down</b><span>First home with $500&ndash;$5,000 out of pocket</span></a>
+  <a class="sbsNavLink" href="https://soldbymrsmith.com/first-home.html"><b>First-Home Buyer Page</b><span>Little money down, step by step</span></a>
+  <a class="sbsNavLink" href="https://soldbymrsmith.com/calabasas"><b>Calabasas Neighborhood Guide</b><span>Communities, prices, schools &amp; daily life</span></a>
+  <a class="sbsNavLink" href="https://soldbymrsmith.com/roadmap.pdf"><b>Free Buyer Roadmap (PDF)</b><span>The 7 steps from pre-approval to keys</span></a>
+  <div class="sbsNavFoot">&#128222; <a href="tel:+13105703057">310-570-3057</a> &nbsp;&middot;&nbsp; &#128197; <a href="https://calendar.app.google/gz8iG7vU9tThsx8g6">Book a free 15-min call</a></div>
+</nav>
+<script>
+(function(){var b=document.getElementById('sbsNavBtn'),p=document.getElementById('sbsNavPanel');if(!b||!p)return;function close(){p.classList.remove('open');b.setAttribute('aria-expanded','false');}b.addEventListener('click',function(e){e.stopPropagation();var open=p.classList.toggle('open');b.setAttribute('aria-expanded',open?'true':'false');});document.addEventListener('click',function(e){if(!p.contains(e.target))close();});document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});})();
+</script>
+<!-- sbs-nav:end -->
 </body>
 </html>
