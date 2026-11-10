@@ -1,8 +1,6 @@
-<?xml ve  <url>
-    <loc>https://soldbymrsmith.com/firsthome</loc>
-  </url>
-rsion="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://soldbymrsmith.com/firsthome</loc></url>
   <url><loc>https://soldbymrsmith.com/</loc></url>
   <url><loc>https://soldbymrsmith.com/first-home.html</loc></url>
   <url><loc>https://soldbymrsmith.com/sell</loc></url>
