@@ -17,6 +17,9 @@
 <meta name="twitter:image" content="https://soldbymrsmith.com/og-share.jpg">
 <meta name="twitter:title" content="Daniel Smith — Sold by Mr Smith | First Team Real Estate, Calabasas">
 <meta name="twitter:description" content="Daniel Smith, First Team Real Estate. Buy your first home with as little as $500-$5,000 out of pocket, or see your 4 options for selling.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -32,70 +35,80 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1463595925727364&ev=PageView&noscript=1"/></noscript>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family: Georgia, 'Times New Roman', serif; background:#0b1d30; color:#faf7f1; min-height:100vh; }
-  .wrap { max-width:520px; margin:0 auto; padding:36px 20px 28px; text-align:center; }
-  .photo { width:118px; height:118px; border-radius:50%; object-fit:cover; border:3px solid #c79a3b; margin-bottom:14px; }
-  h1 { font-size:30px; letter-spacing:.4px; }
-  .brand { color:#c79a3b; font-size:15px; letter-spacing:2.5px; text-transform:uppercase; margin-top:5px; }
-  .sub { font-family: Arial, Helvetica, sans-serif; font-size:14.5px; line-height:1.55; color:#d8dee6; margin:14px 6px 26px; }
-  a.btn { display:block; text-decoration:none; background:#10283f; border:1.5px solid #c79a3b; color:#faf7f1; border-radius:14px; padding:16px 18px; margin-bottom:13px; text-align:left; }
-  a.btn .t { font-size:18px; display:block; }
-  a.btn .s { font-family: Arial, Helvetica, sans-serif; font-size:13px; color:#b9c4d1; display:block; margin-top:3px; line-height:1.45; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Jost', Arial, sans-serif; font-weight:300; background:#0b1d30; color:#faf7f1; min-height:100vh; overflow-x:hidden; }
+  .luxhero { position:relative; min-height:92vh; display:flex; align-items:center; justify-content:center; text-align:center; background:url('hero-julian.jpg') center/cover no-repeat #0b1d30; }
+  .luxhero::before { content:''; position:absolute; inset:0; background:linear-gradient(180deg, rgba(11,29,48,.66) 0%, rgba(11,29,48,.34) 42%, rgba(11,29,48,.90) 100%); }
+  .luxhero .in { position:relative; padding:88px 22px 66px; max-width:780px; }
+  .eyebrow { font-size:12.5px; letter-spacing:4.5px; text-transform:uppercase; color:#e6c87a; font-weight:500; }
+  .luxhero h1 { font-family:'Cormorant Garamond', Georgia, serif; font-weight:500; font-size:clamp(42px, 9vw, 72px); letter-spacing:.14em; text-transform:uppercase; line-height:1.1; margin:20px 0 4px; color:#ffffff; }
+  .hrule { width:72px; height:1px; background:#c79a3b; margin:22px auto; }
+  .htag { font-family:'Cormorant Garamond', Georgia, serif; font-style:italic; font-weight:500; font-size:clamp(19px, 3.8vw, 25px); color:#eef2f6; line-height:1.45; }
+  .hcta { display:inline-block; margin-top:32px; background:#c79a3b; color:#0b1d30; text-decoration:none; padding:16px 36px; font-size:13.5px; letter-spacing:2.5px; text-transform:uppercase; font-weight:600; border:1px solid #c79a3b; }
+  .hbrand { margin-top:18px; font-size:11.5px; letter-spacing:3px; text-transform:uppercase; color:#c8d2dd; }
+  .wrap { max-width:520px; margin:0 auto; padding:0 20px 30px; text-align:center; }
+  .ivory { width:100vw; margin-left:calc(50% - 50vw); background:#faf7f1; color:#12263a; padding:46px 22px 42px; }
+  .ivory .in2 { max-width:520px; margin:0 auto; }
+  .photo2 { width:132px; height:132px; border-radius:50%; object-fit:cover; border:2px solid #c79a3b; padding:3px; background:#faf7f1; margin-bottom:16px; }
+  .eyebrow.d { color:#a07f2c; }
+  .about { font-size:15.5px; line-height:1.75; color:#33475e; margin:16px 2px 26px; font-weight:300; }
+  a.btn { display:block; text-decoration:none; background:#10283f; border:1px solid rgba(199,154,59,.75); color:#faf7f1; border-radius:4px; padding:18px; margin-bottom:13px; text-align:left; }
+  a.btn .t { font-family:'Cormorant Garamond', Georgia, serif; font-size:21px; font-weight:600; letter-spacing:.02em; display:block; }
+  a.btn .s { font-size:13.5px; font-weight:300; color:#b9c4d1; display:block; margin-top:4px; line-height:1.5; }
   a.btn.gold { background:#c79a3b; color:#0b1d30; text-align:center; border-color:#c79a3b; }
   a.btn.gold .s { color:#33475e; }
-  a.btn.hot { border-color:#c0392b; background:#3a1420; }
-  .tag { display:inline-block; background:#c0392b; color:#fff; font-family:Arial, sans-serif; font-size:11px; font-weight:bold; letter-spacing:1.5px; padding:3px 9px; border-radius:20px; margin-bottom:7px; }
   .row { display:flex; gap:13px; }
   .row a.btn { flex:1; text-align:center; }
-  .social { margin:20px 0 6px; font-family:Arial, sans-serif; font-size:14px; }
+  .social { margin:22px 0 6px; font-size:14px; letter-spacing:1.5px; text-transform:uppercase; }
   .social a { color:#c79a3b; text-decoration:none; margin:0 10px; }
-  .foot { font-family:Arial, sans-serif; font-size:11px; color:#7f8ea0; line-height:1.6; margin-top:22px; }
-
-  .hero { padding-top:6px; }
-  .photo2 { width:150px; height:150px; border-radius:50%; object-fit:cover; border:3px solid #c79a3b; margin-bottom:16px; box-shadow:0 10px 34px rgba(0,0,0,.45); }
-  .rule { width:64px; height:2px; background:#c79a3b; margin:16px auto 0; }
-  .stats { display:flex; gap:10px; margin:22px 0 6px; }
-  .stat { flex:1; background:#10283f; border:1.5px solid #2c4a68; border-radius:14px; padding:13px 4px 11px; }
-  .stat .n { font-size:21px; color:#c79a3b; display:block; }
-  .stat .l { font-family:Arial,sans-serif; font-size:10.5px; letter-spacing:1.2px; text-transform:uppercase; color:#b9c4d1; display:block; margin-top:3px; line-height:1.4; }
-  .about { font-family:Arial,sans-serif; font-size:14.5px; line-height:1.65; color:#d8dee6; text-align:left; margin:18px 2px 24px; }
-  .secttl { font-size:21px; color:#c79a3b; letter-spacing:.4px; margin:26px 0 12px; text-align:left; }
-  a.card { display:block; text-decoration:none; background:#10283f; border:1.5px solid #c79a3b; border-radius:16px; overflow:hidden; margin-bottom:15px; text-align:left; }
-  a.card img { width:100%; height:210px; object-fit:cover; display:block; }
-  a.card .cb { padding:15px 18px 17px; }
-  a.card .ct { font-size:19px; color:#faf7f1; display:block; }
-  a.card .cs { font-family:Arial,sans-serif; font-size:13px; color:#b9c4d1; display:block; margin-top:3px; line-height:1.45; }
-  a.card .cp { color:#c79a3b; font-size:17px; display:block; margin-top:6px; }
-  a.card.nophoto .cb { padding-top:17px; }
+  .foot { font-size:11.5px; font-weight:300; color:#7f8ea0; line-height:1.65; margin-top:22px; }
+  .secttl { font-family:'Cormorant Garamond', Georgia, serif; font-size:28px; font-weight:600; color:#faf7f1; letter-spacing:.05em; margin:36px 0 14px; text-align:left; }
+  a.card { display:block; text-decoration:none; background:#10283f; border:1px solid rgba(199,154,59,.75); border-radius:6px; overflow:hidden; margin-bottom:16px; text-align:left; }
+  a.card img { width:100%; height:240px; object-fit:cover; display:block; }
+  a.card .cb { padding:17px 19px 19px; display:block; }
+  a.card .ct { font-family:'Cormorant Garamond', Georgia, serif; font-size:23px; font-weight:600; color:#faf7f1; display:block; }
+  a.card .cs { font-size:13.5px; font-weight:300; color:#b9c4d1; display:block; margin-top:4px; line-height:1.5; }
+  a.card .cp { font-family:'Cormorant Garamond', Georgia, serif; color:#c79a3b; font-size:22px; font-weight:600; display:block; margin-top:7px; }
+  form[name="bio-leads"] { border-radius:6px !important; }
+  form[name="bio-leads"] * { font-family:'Jost', sans-serif !important; }
+  form[name="bio-leads"] > span:first-of-type { font-family:'Cormorant Garamond', Georgia, serif !important; font-size:25px !important; }
+  form[name="bio-leads"] button { font-family:'Cormorant Garamond', Georgia, serif !important; font-size:19px !important; letter-spacing:.03em; }
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"RealEstateAgent","name":"Daniel Smith - First Team Real Estate","alternateName":"Sold by Mr Smith","url":"https://soldbymrsmith.com","telephone":"+1-310-570-3057","email":"Soldbymrsmith@firstteam.com","address":{"@type":"PostalAddress","streetAddress":"24025 Park Sorrento, Suite 217","addressLocality":"Calabasas","addressRegion":"CA","postalCode":"91302","addressCountry":"US"},"areaServed":["Calabasas","Woodland Hills","Tarzana","Encino","Sherman Oaks","Los Angeles","Carson","Torrance","Gardena","Long Beach","Inglewood","Menifee"],"openingHours":"Mo-Su 08:00-20:00","sameAs":["https://www.instagram.com/soldbymrsmith","https://www.facebook.com/SoldbyMrSmith/","https://www.zillow.com/profile/soldbymrsmith","https://www.homes.com/real-estate-agents/daniel-smith/gh6mjbx/","https://www.realty.com/a/daniel-smith"]}
 </script>
 </head>
 <body>
-<div class="wrap">
-  <a href="https://www.zillow.com/homedetails/900-Gainsborough-Dr-Pasadena-CA-91107/20728546_zpid/" style="display:block;background:#c79a3b;color:#0b1d30;text-decoration:none;font-weight:700;text-align:center;padding:13px 16px;border-radius:12px;margin:14px 0 4px;font-size:16px;line-height:1.45;">&#127968; OPEN HOUSE THIS SUNDAY — Nov 22 &middot; 12–3 PM<br>900 Gainsborough Dr, Pasadena &middot; $3,880,000 &middot; Tap for details &rarr;</a>
-  <div class="hero">
-  <img class="photo2" src="daniel-avatar.jpg" alt="Daniel Smith">
-  <h1>Daniel Smith</h1>
-  <div class="brand">Sold by Mr Smith</div>
-  <p class="sub">Realtor&reg; with First Team Real Estate — Calabasas.<br>Buy sooner. Sell smarter. Every option on the table.</p>
-  <div class="rule"></div>
-  <p class="about">Los Angeles REALTOR&reg; with First Team Real Estate in Calabasas — 5 years in real estate and 20 years in sales and marketing. For first-time buyers, I make ownership possible sooner with low-down-payment and down payment assistance programs, and honest numbers before you ever write an offer. For sellers, I put all four options on the table — a cash offer, selling as-is, renovating before you list with nothing out of pocket until closing, or flipping your own house and keeping the profit. Serving Calabasas &amp; the Valley, Los Angeles, Carson &amp; the South Bay, and the Inland Empire.</p>
+<header class="luxhero">
+  <div class="in">
+    <div class="eyebrow">First Team Real Estate &middot; Calabasas</div>
+    <h1>Daniel Smith</h1>
+    <div class="hrule"></div>
+    <p class="htag">Buy sooner. Sell smarter. Every option on the table.</p>
+    <a class="hcta" href="#listings">View Featured Listings</a>
+    <div class="hbrand">Sold by Mr Smith</div>
   </div>
+</header>
+<div class="wrap">
+  <section class="ivory">
+    <div class="in2">
+      <img class="photo2" src="daniel-avatar.jpg" alt="Daniel Smith">
+      <div class="eyebrow d">Meet Daniel</div>
+      <p class="about">Los Angeles REALTOR&reg; with First Team Real Estate in Calabasas — 5 years in real estate and 20 years in sales and marketing. For first-time buyers, I make ownership possible sooner with low-down-payment and down payment assistance programs, and honest numbers before you ever write an offer. For sellers, I put all four options on the table — a cash offer, selling as-is, renovating before you list with nothing out of pocket until closing, or flipping your own house and keeping the profit. Serving Calabasas &amp; the Valley, Los Angeles, Carson &amp; the South Bay, and the Inland Empire.</p>
+      <a class="btn gold" href="/first-home.html">
+        <span class="t">Buying Your First Home?</span>
+        <span class="s">See how my buyers get in with as little as $500–$5,000 out of pocket — the full breakdown</span>
+      </a>
+    </div>
+  </section>
 
-  <a class="btn gold" href="/first-home.html">
-    <span class="t">🔑 Buying Your First Home?</span>
-    <span class="s">See how my buyers get in with as little as $500–$5,000 out of pocket — the full breakdown</span>
-  </a>
-
-<div class="secttl">&#128269; Search Homes</div>
+<div class="secttl">Search Homes</div>
   <div class="sbsHomeSearch">
     <form class="sbsSearchForm"><input class="sbsSearchInput" type="search" placeholder="City, neighborhood, ZIP, or address&hellip;" aria-label="Search homes"><button type="submit">Search</button></form>
     <div class="sbsChips"><a class="sbsChip sbsChipLight" href="https://danielsmith.firstteam.com/home-search/listings?regions=%5B%7B%22regionId%22%3A%22786ecf78-4ca2-48fe-a9f0-330bf4548fff%22%2C%22address%22%3A%22Calabasas%2C+CA%2C+USA%22%7D%5D&amp;center=%7B%22lat%22%3A34.11842512689059%2C%22lng%22%3A-118.6622095%7D&amp;zoom=13&amp;boundary=%5B%5B%5B34.17901545589626%2C-118.76065729968262%5D%2C%5B34.17901545589626%2C-118.56376170031739%5D%2C%5B34.05779135513212%2C-118.56376170031739%5D%2C%5B34.05779135513212%2C-118.76065729968262%5D%2C%5B34.17901545589626%2C-118.76065729968262%5D%5D%5D&amp;cityName=Calabasas&amp;stateName=CA">Calabasas</a><a class="sbsChip sbsChipLight" href="https://danielsmith.firstteam.com/home-search/listings?regions=%5B%7B%22regionId%22%3A%22dd069a76-765d-40f0-8571-1501aa3dc4b5%22%2C%22address%22%3A%22Woodland+Hills%2C+Los+Angeles%2C+CA%2C+USA%22%7D%5D&amp;center=%7B%22lat%22%3A34.16064442102533%2C%22lng%22%3A-118.6147775%7D&amp;zoom=13&amp;boundary=%5B%5B%5B34.22120446080979%2C-118.71322529968262%5D%2C%5B34.22120446080979%2C-118.51632970031739%5D%2C%5B34.10004091297562%2C-118.51632970031739%5D%2C%5B34.10004091297562%2C-118.71322529968262%5D%2C%5B34.22120446080979%2C-118.71322529968262%5D%5D%5D&amp;cityName=Los+Angeles&amp;stateName=CA">Woodland Hills</a><a class="sbsChip sbsChipLight" href="https://danielsmith.firstteam.com/home-search/listings?regions=%5B%7B%22regionId%22%3A%22b5838a0c-2d46-4fdb-8b29-d4068b849c3b%22%2C%22address%22%3A%22Tarzana%2C+Los+Angeles%2C+CA%2C+USA%22%7D%5D&amp;center=%7B%22lat%22%3A34.15649285783907%2C%22lng%22%3A-118.544589%7D&amp;zoom=13&amp;boundary=%5B%5B%5B34.217055877519506%2C-118.64303679968262%5D%2C%5B34.217055877519506%2C-118.44614120031738%5D%2C%5B34.0958863723979%2C-118.44614120031738%5D%2C%5B34.0958863723979%2C-118.64303679968262%5D%2C%5B34.217055877519506%2C-118.64303679968262%5D%5D%5D&amp;cityName=Los+Angeles&amp;stateName=CA">Tarzana</a><a class="sbsChip sbsChipLight" href="https://danielsmith.firstteam.com/home-search/listings?regions=%5B%7B%22regionId%22%3A%223f498b34-f5e8-450f-89f2-db4b05ce409a%22%2C%22address%22%3A%22Encino%2C+Los+Angeles%2C+CA%2C+USA%22%7D%5D&amp;center=%7B%22lat%22%3A34.157163142004094%2C%22lng%22%3A-118.50342749999999%7D&amp;zoom=14&amp;boundary=%5B%5B%5B34.18744984685136%2C-118.5526513998413%5D%2C%5B34.18744984685136%2C-118.45420360015868%5D%2C%5B34.126865570612104%2C-118.45420360015868%5D%2C%5B34.126865570612104%2C-118.5526513998413%5D%2C%5B34.18744984685136%2C-118.5526513998413%5D%5D%5D&amp;cityName=Los+Angeles&amp;stateName=CA">Encino</a><a class="sbsChip sbsChipLight" href="https://danielsmith.firstteam.com/home-search/listings?regions=%5B%7B%22regionId%22%3A%22efa67235-7e9b-4e04-8805-5c2f9e416507%22%2C%22address%22%3A%22Sherman+Oaks%2C+Los+Angeles%2C+CA%2C+USA%22%7D%5D&amp;center=%7B%22lat%22%3A34.14924510307074%2C%22lng%22%3A-118.44159200000001%7D&amp;zoom=14&amp;boundary=%5B%5B%5B34.179534648623594%2C-118.49081589984132%5D%2C%5B34.179534648623594%2C-118.3923681001587%5D%2C%5B34.11894469216792%2C-118.3923681001587%5D%2C%5B34.11894469216792%2C-118.49081589984132%5D%2C%5B34.179534648623594%2C-118.49081589984132%5D%5D%5D&amp;cityName=Los+Angeles&amp;stateName=CA">Sherman Oaks</a><a class="sbsChip sbsChipLight" href="https://danielsmith.firstteam.com/home-search/listings?regions=%5B%7B%22regionId%22%3A%22749d0208-fc28-4cb4-a155-d4df976f0ea6%22%2C%22address%22%3A%22Los+Angeles%2C+CA%2C+USA%22%7D%5D&amp;center=%7B%22lat%22%3A34.02107031788565%2C%22lng%22%3A-118.4117325%7D&amp;zoom=10&amp;boundary=%5B%5B%5B34.505132891785784%2C-119.19931489746094%5D%2C%5B34.505132891785784%2C-117.62415010253906%5D%2C%5B33.53423127023309%2C-117.62415010253906%5D%2C%5B33.53423127023309%2C-119.19931489746094%5D%2C%5B34.505132891785784%2C-119.19931489746094%5D%5D%5D&amp;cityName=Los+Angeles&amp;stateName=CA">Los Angeles</a><a class="sbsChip sbsChipLight" href="https://danielsmith.firstteam.com/home-search/listings?regions=%5B%7B%22regionId%22%3A%22a1c65dff-3a8f-4eef-b7d4-9cfd08625a88%22%2C%22address%22%3A%22Carson%2C+CA%2C+USA%22%7D%5D&amp;center=%7B%22lat%22%3A33.839380325599514%2C%22lng%22%3A-118.24739250000002%7D&amp;zoom=13&amp;boundary=%5B%5B%5B33.900170021428174%2C-118.34584029968264%5D%2C%5B33.900170021428174%2C-118.1489447003174%5D%2C%5B33.77854735801035%2C-118.1489447003174%5D%2C%5B33.77854735801035%2C-118.34584029968264%5D%2C%5B33.900170021428174%2C-118.34584029968264%5D%5D%5D&amp;cityName=Carson&amp;stateName=CA">Carson</a><a class="sbsChip sbsChipLight" href="https://danielsmith.firstteam.com/home-search/listings?regions=%5B%7B%22regionId%22%3A%22dfaad039-d7c1-4c0e-819b-5923fb713771%22%2C%22address%22%3A%22Torrance%2C+CA%2C+USA%22%7D%5D&amp;center=%7B%22lat%22%3A33.833807099223534%2C%22lng%22%3A-118.395747%7D&amp;zoom=13&amp;boundary=%5B%5B%5B33.894600762253695%2C-118.49419479968262%5D%2C%5B33.894600762253695%2C-118.29729920031738%5D%2C%5B33.77297016788988%2C-118.29729920031738%5D%2C%5B33.77297016788988%2C-118.49419479968262%5D%2C%5B33.894600762253695%2C-118.49419479968262%5D%5D%5D&amp;cityName=Torrance&amp;stateName=CA">Torrance</a><a class="sbsChip sbsChipLight" href="https://danielsmith.firstteam.com/home-search/listings?regions=%5B%7B%22regionId%22%3A%2216d9a646-97a2-4d8a-9a02-00715ac8b93f%22%2C%22address%22%3A%22Gardena%2C+CA%2C+USA%22%7D%5D&amp;center=%7B%22lat%22%3A33.87845089737567%2C%22lng%22%3A-118.29871100000001%7D&amp;zoom=13&amp;boundary=%5B%5B%5B33.9392127653863%2C-118.39715879968263%5D%2C%5B33.9392127653863%2C-118.2002632003174%5D%2C%5B33.81764573341546%2C-118.2002632003174%5D%2C%5B33.81764573341546%2C-118.39715879968263%5D%2C%5B33.9392127653863%2C-118.39715879968263%5D%5D%5D&amp;cityName=Gardena&amp;stateName=CA">Gardena</a><a class="sbsChip sbsChipLight" href="https://danielsmith.firstteam.com/home-search/listings?regions=%5B%7B%22regionId%22%3A%223b3f6ed6-7a5f-4fe1-ae87-02e0d7fadec8%22%2C%22address%22%3A%22Long+Beach%2C+CA%2C+USA%22%7D%5D&amp;center=%7B%22lat%22%3A33.788117475091%2C%22lng%22%3A-118.15606799999999%7D&amp;zoom=12&amp;boundary=%5B%5B%5B33.909726526811134%2C-118.35296359936522%5D%2C%5B33.909726526811134%2C-117.95917240063476%5D%2C%5B33.66633546398919%2C-117.95917240063476%5D%2C%5B33.66633546398919%2C-118.35296359936522%5D%2C%5B33.909726526811134%2C-118.35296359936522%5D%5D%5D&amp;cityName=Long+Beach&amp;stateName=CA">Long Beach</a><a class="sbsChip sbsChipLight" href="https://danielsmith.firstteam.com/home-search/listings?regions=%5B%7B%22regionId%22%3A%227d4e7605-75ce-4abf-8dd9-d75a42151ea1%22%2C%22address%22%3A%22Inglewood%2C+CA%2C+USA%22%7D%5D&amp;center=%7B%22lat%22%3A33.953311670302476%2C%22lng%22%3A-118.348268%7D&amp;zoom=13&amp;boundary=%5B%5B%5B34.01402014026782%2C-118.44671579968262%5D%2C%5B34.01402014026782%2C-118.24982020031739%5D%2C%5B33.89255985826527%2C-118.24982020031739%5D%2C%5B33.89255985826527%2C-118.44671579968262%5D%2C%5B34.01402014026782%2C-118.44671579968262%5D%5D%5D&amp;cityName=Inglewood&amp;stateName=CA">Inglewood</a><a class="sbsChip sbsChipLight" href="https://danielsmith.firstteam.com/home-search/listings?regions=%5B%7B%22regionId%22%3A%226634ac7f-d22a-4c88-961c-44fdf95632bc%22%2C%22address%22%3A%22Menifee%2C+CA%2C+USA%22%7D%5D&amp;center=%7B%22lat%22%3A33.70268956489838%2C%22lng%22%3A-117.2007665%7D&amp;zoom=12&amp;boundary=%5B%5B%5B33.8244200019892%2C-117.39766209936523%5D%2C%5B33.8244200019892%2C-117.00387090063477%5D%2C%5B33.58078638202838%2C-117.00387090063477%5D%2C%5B33.58078638202838%2C-117.39766209936523%5D%2C%5B33.8244200019892%2C-117.39766209936523%5D%5D%5D&amp;cityName=Menifee&amp;stateName=CA">Menifee</a></div>
     <div class="sbsHint">Tap a city for live listings there — or type anything and tap the matching suggestion in my First Team search.</div>
   </div>
-  <div class="secttl">&#127968; Featured Listings</div>
+  <div class="secttl" id="listings">Featured Listings</div>
   <a class="card" href="https://5922-julian-lane.firstteam.com">
     <img src="listing-tarzana.jpg" alt="5922 Julian Ln, Tarzana — living room with stone fireplace">
     <span class="cb">
@@ -116,7 +129,7 @@ fbq('track', 'PageView');
 <form name="bio-leads" method="POST" action="https://api.web3forms.com/submit" style="background:#10283f;border:1.5px solid #c79a3b;border-radius:14px;padding:18px;margin-bottom:15px;text-align:left;"><input type="hidden" name="access_key" value="c9913135-526a-4833-acf4-6c8d058d4566"><input type="hidden" name="subject" value="New lead from soldbymrsmith.com link page"><input type="hidden" name="from_name" value="SoldByMrSmith.com"><input type="hidden" name="redirect" value="https://soldbymrsmith.com/bio-thanks.html"><input type="checkbox" name="botcheck" style="display:none">
     <input type="hidden" name="form-name" value="bio-leads">
     <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
-    <span style="font-size:19px;display:block;">🏡 Start Here — 60 Seconds</span>
+    <span style="font-size:19px;display:block;">Start Here — 60 Seconds</span>
     <span style="font-family:Arial,sans-serif;font-size:13px;color:#b9c4d1;display:block;margin:4px 0 6px;line-height:1.45;">Tell me what you're looking for and I'll come back with a plan — no chasing, no pressure.</span>
     <span style="display:block;font-family:Arial,sans-serif;font-size:12.5px;color:#b9c4d1;letter-spacing:.6px;margin:10px 0 5px;text-transform:uppercase;">Your name (required)</span>
     <input type="text" name="name" required style="width:100%;padding:11px;border-radius:8px;border:1px solid #3d5a76;background:#0b1d30;color:#faf7f1;font-size:15px;margin-bottom:9px;">
@@ -138,32 +151,32 @@ fbq('track', 'PageView');
   </form>
 
   <a class="btn gold" href="https://2436142.my1003app.com/1696148/register?time=1710447907166">
-    <span class="t">🔑 Buy Your First Home</span>
+    <span class="t">Buy Your First Home</span>
     <span class="s">See what you qualify for — as little as $500–$5,000 out of pocket</span>
   </a>
 
-  <div class="secttl">🤝 Work With Me</div>
+  <div class="secttl">Work With Me</div>
   <a class="btn" href="https://calendar.app.google/gz8iG7vU9tThsx8g6" data-intent="Buyer">
-    <span class="t">📅 Buyers — Book a Free 15-Minute Call</span>
+    <span class="t">Buyers — Book a Free 15-Minute Call</span>
     <span class="s">We'll map what you qualify for and which programs fit. I'll call you at the number you give</span>
   </a>
   <a class="btn" href="https://calendar.app.google/gz8iG7vU9tThsx8g6" data-intent="Seller">
-    <span class="t">📅 Sellers — Book a Free 15-Minute Call</span>
+    <span class="t">Sellers — Book a Free 15-Minute Call</span>
     <span class="s">We'll walk your 4 options: cash offer, sell as-is, renovate with no money out of pocket, or flip your own house</span>
   </a>
   <a class="btn" href="https://ig.me/m/soldbymrsmith">
-    <span class="t">💬 Rather DM?</span>
+    <span class="t">Rather DM?</span>
     <span class="s">Buyers send “HOME” • Sellers send “OPTIONS” — I'll take it from there</span>
   </a>
 
 <a class="btn" href="https://danielsmith.firstteam.com">
-    <span class="t">🏛️ My Full First Team Profile</span>
+    <span class="t">My Full First Team Profile</span>
     <span class="s">All my listings, sales history, and reviews — on First Team Real Estate</span>
   </a>
 
   <div class="row">
-    <a class="btn" href="tel:+13105703057"><span class="t">📞 Call Me</span></a>
-    <a class="btn" href="sms:+13105703057?&body=Hi%20Daniel%2C%20I%27d%20like%20to%20talk%20about%20real%20estate."><span class="t">💬 Text Me</span></a>
+    <a class="btn" href="tel:+13105703057"><span class="t">Call Me</span></a>
+    <a class="btn" href="sms:+13105703057?&body=Hi%20Daniel%2C%20I%27d%20like%20to%20talk%20about%20real%20estate."><span class="t">Text Me</span></a>
   </div>
 
 <div class="social">
