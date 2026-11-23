@@ -69,6 +69,18 @@ fbq('track', 'PageView');
   a.card .ct { font-family:'Cormorant Garamond', Georgia, serif; font-size:23px; font-weight:600; color:#faf7f1; display:block; }
   a.card .cs { font-size:13.5px; font-weight:300; color:#b9c4d1; display:block; margin-top:4px; line-height:1.5; }
   a.card .cp { font-family:'Cormorant Garamond', Georgia, serif; color:#c79a3b; font-size:22px; font-weight:600; display:block; margin-top:7px; }
+.soldgrid { display:grid; grid-template-columns:1fr 1fr; gap:12px; text-align:left; }
+  .soldcard { background:#10283f; border:1px solid rgba(199,154,59,.55); border-radius:6px; overflow:hidden; }
+  .soldcard img { width:100%; height:118px; object-fit:cover; display:block; }
+  .soldcard .sb { padding:11px 13px 13px; }
+  .soldtag { font-size:10px; letter-spacing:2.5px; text-transform:uppercase; color:#e6c87a; font-weight:600; }
+  .soldcard .st { font-family:'Cormorant Garamond', Georgia, serif; font-size:17.5px; font-weight:600; color:#faf7f1; display:block; margin-top:3px; line-height:1.25; }
+  .soldcard .sp { font-family:'Cormorant Garamond', Georgia, serif; font-size:18px; font-weight:600; color:#c79a3b; display:block; margin-top:2px; }
+  .soldcard .sd { font-size:11.5px; font-weight:300; color:#b9c4d1; display:block; margin-top:2px; }
+  .quotes .q { font-family:'Cormorant Garamond', Georgia, serif; font-style:italic; font-weight:500; font-size:21.5px; line-height:1.5; color:#12263a; margin:0 auto 10px; max-width:480px; }
+  .quotes .qa { font-size:11.5px; letter-spacing:2.5px; text-transform:uppercase; color:#a07f2c; font-weight:600; margin-bottom:30px; }
+  .quotes .qa:last-child { margin-bottom:4px; }
+  .quotes .qrule { width:52px; height:1px; background:#c79a3b; margin:0 auto 30px; }
   form[name="bio-leads"] { border-radius:6px !important; }
   form[name="bio-leads"] * { font-family:'Jost', sans-serif !important; }
   form[name="bio-leads"] > span:first-of-type { font-family:'Cormorant Garamond', Georgia, serif !important; font-size:25px !important; }
@@ -126,6 +138,26 @@ fbq('track', 'PageView');
     </span>
   </a>
 
+
+  <div class="secttl">Recently Sold</div>
+  <div class="soldgrid">
+    <div class="soldcard">
+      <img src="sold-gage.jpg" alt="1226 W Gage Ave, Los Angeles">
+      <div class="sb"><span class="soldtag">Sold</span><span class="st">1226 W Gage Ave, Los Angeles</span><span class="sp">$1,250,000</span><span class="sd">Sold Feb 2024 &middot; 8 bd / 4 ba triplex</span></div>
+    </div>
+    <div class="soldcard">
+      <img src="sold-riogrande.jpg" alt="6933 Rio Grande, Eastvale">
+      <div class="sb"><span class="soldtag">Sold</span><span class="st">6933 Rio Grande, Eastvale</span><span class="sp">$920,000</span><span class="sd">Sold Dec 2025 &middot; 5 bd / 4 ba</span></div>
+    </div>
+    <div class="soldcard">
+      <img src="sold-55th.jpg" alt="1445 W 55th St, Los Angeles">
+      <div class="sb"><span class="soldtag">Sold</span><span class="st">1445 W 55th St, Los Angeles</span><span class="sp">$607,000</span><span class="sd">Sold Dec 2025 &middot; 3 bd / 2 ba</span></div>
+    </div>
+    <div class="soldcard">
+      <img src="sold-tamarack.jpg" alt="435 E Tamarack, Inglewood">
+      <div class="sb"><span class="soldtag">Sold</span><span class="st">435 E Tamarack, Inglewood</span><span class="sp">$418,000</span><span class="sd">Sold Mar 2026</span></div>
+    </div>
+  </div>
 <form name="bio-leads" method="POST" action="https://api.web3forms.com/submit" style="background:#10283f;border:1.5px solid #c79a3b;border-radius:14px;padding:18px;margin-bottom:15px;text-align:left;"><input type="hidden" name="access_key" value="c9913135-526a-4833-acf4-6c8d058d4566"><input type="hidden" name="subject" value="New lead from soldbymrsmith.com link page"><input type="hidden" name="from_name" value="SoldByMrSmith.com"><input type="hidden" name="redirect" value="https://soldbymrsmith.com/bio-thanks.html"><input type="checkbox" name="botcheck" style="display:none">
     <input type="hidden" name="form-name" value="bio-leads">
     <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
@@ -149,6 +181,21 @@ fbq('track', 'PageView');
     <textarea name="details" rows="3" placeholder="Neighborhoods you like, must-haves, or about the home you'd sell…" style="width:100%;padding:11px;border-radius:8px;border:1px solid #3d5a76;background:#0b1d30;color:#faf7f1;font-size:15px;margin-bottom:9px;"></textarea>
     <button type="submit" style="width:100%;background:#c79a3b;color:#0b1d30;border:none;border-radius:10px;padding:14px;font-size:17px;font-family:Georgia,serif;cursor:pointer;">Send — Daniel will reach out</button>
   </form>
+
+
+  <section class="ivory quotes" style="margin-top:26px;">
+    <div class="in2">
+      <div class="eyebrow d" style="margin-bottom:26px;">In Their Words</div>
+      <p class="q">&ldquo;The service provided by Daniel Smith was elite with the utmost premium care.&rdquo;</p>
+      <div class="qa">Sherman W. &middot; Yelp</div>
+      <div class="qrule"></div>
+      <p class="q">&ldquo;Daniel made everything happen for us on a tight timeline&hellip; he negotiated seller credits and more for us.&rdquo;</p>
+      <div class="qa">Carl E. &middot; Yelp</div>
+      <div class="qrule"></div>
+      <p class="q">&ldquo;He genuinely cared about helping us find the right home and made us feel supported throughout the entire process.&rdquo;</p>
+      <div class="qa">Briana &amp; Trandis &middot; RealSatisfied</div>
+    </div>
+  </section>
 
   <a class="btn gold" href="https://2436142.my1003app.com/1696148/register?time=1710447907166">
     <span class="t">Buy Your First Home</span>
