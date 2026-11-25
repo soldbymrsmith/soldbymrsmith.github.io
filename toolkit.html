@@ -44,7 +44,8 @@ fbq('track', 'PageView');
   .hsub { font-size:clamp(16.5px, 3.6vw, 20px); line-height:1.6; color:#dbe3ec; max-width:640px; margin:14px auto 0; font-weight:300; }
   .hsub b { font-weight:500; color:#ffffff; }
   .vidwrap { max-width:330px; margin:30px auto 6px; }
-  .vidwrap video { width:100%; aspect-ratio:9/16; display:block; border:1px solid rgba(199,154,59,.85); border-radius:10px; background:#06121f; box-shadow:0 18px 50px rgba(0,0,0,.45); }
+  .vidbox { position:relative; width:100%; padding-top:177.78%; border:1px solid rgba(199,154,59,.85); border-radius:10px; overflow:hidden; background:#0a1c30; box-shadow:0 18px 50px rgba(0,0,0,.45); }
+  .vidbox video { position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; display:block; background:#0a1c30; }
   .vidcap { font-size:12.5px; color:#8fa1b5; margin-top:9px; letter-spacing:.4px; }
   a.cta { display:block; text-decoration:none; background:#c79a3b; color:#0b1d30; text-align:center; border:1px solid #c79a3b; border-radius:4px; padding:17px 20px; margin:22px auto 0; max-width:460px; }
   a.cta .t { font-family:'Cormorant Garamond', Georgia, serif; font-size:22px; font-weight:700; letter-spacing:.02em; display:block; }
@@ -130,10 +131,12 @@ fbq('track', 'PageView');
   <h1>The AI Systems That Run My Real Estate Business &mdash; <span class="gold">Installed in Yours This Weekend</span></h1>
   <p class="hsub">I spent <b>168 hours</b> building, testing, and fixing these systems inside a live real estate business. <b>The AI Realtor Toolkit</b> packages them &mdash; the playbooks, the rules, the prompts, and the templates &mdash; so you don&rsquo;t have to spend the 168 hours. Watch how it works:</p>
   <div class="vidwrap">
-    <video controls playsinline preload="none" poster="toolkit-ad-poster.png" width="1080" height="1920" aria-label="The AI Realtor Toolkit — 60-second introduction by Daniel Smith">
+    <div class="vidbox">
+    <video controls playsinline preload="metadata" poster="toolkit-ad-poster.png" aria-label="The AI Realtor Toolkit — 60-second introduction by Daniel Smith">
       <source src="toolkit-ad.mp4" type="video/mp4">
       Your browser can&rsquo;t play this video &mdash; the full story is in the letter below.
     </video>
+    </div>
     <div class="vidcap">Daniel Smith &middot; First Team Real Estate, Calabasas &middot; 60 seconds</div>
   </div>
   <a class="cta" href="https://payhip.com/b/FT9vh">
