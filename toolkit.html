@@ -99,6 +99,10 @@ fbq('track', 'PageView');
   .stack .what span { display:block; font-size:12.5px; color:#b9c4d1; margin-top:2px; line-height:1.45; }
   .stack .repl { font-size:12.5px; color:#e6c87a; text-align:right; white-space:nowrap; padding-top:2px; line-height:1.45; }
   .tier { background:#10283f; border:1px solid rgba(199,154,59,.55); border-radius:6px; overflow:hidden; margin-bottom:16px; text-align:left; }
+  .tiergrid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px; }
+  .tiergrid .tier { margin-bottom:0; }
+  .tiergrid .tier img.cover { height:120px; }
+  @media (max-width:640px) { .tiergrid { grid-template-columns:1fr; } .tiergrid .tier img.cover { height:190px; } }
   .tier.feature { border:2px solid #c79a3b; }
   .tier .flag { background:#c79a3b; color:#0b1d30; text-align:center; font-size:11.5px; letter-spacing:2.5px; text-transform:uppercase; font-weight:600; padding:8px 10px; }
   .tier img.cover { width:100%; height:190px; object-fit:cover; object-position:top center; display:block; }
@@ -322,6 +326,7 @@ fbq('track', 'PageView');
 </div>
 <p class="secsub" style="margin-top:18px;">Four ways in. Start free, or take the whole stack.</p>
 
+<div class="tiergrid">
 <div class="tier">
   <img class="cover" src="toolkit-cover-starter.png" alt="The 15-Minute Lead Response Starter — free edition cover">
   <div class="tb">
@@ -380,6 +385,7 @@ fbq('track', 'PageView');
     <p>After purchase, one intake form collects the address, a photos link, and the price. Your launch is delivered within 5 business days of a complete intake.</p>
     <a class="buy" href="https://payhip.com/b/EogtF">Get the Ultimate Package &mdash; $489</a>
   </div>
+</div>
 </div>
 
 <p class="secsub" style="font-size:13.5px;">Already own Core? <a href="https://payhip.com/b/LyB6z" style="color:#e6c87a;">Upgrade to Complete anytime for $71</a> &mdash; purchase with the same email you used for Core; upgrades are verified against Core purchases.</p>
